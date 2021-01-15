@@ -1,8 +1,10 @@
-#Gender and Age Detection Python Project
+Gender and Age Detection Python Project
+========================================
 
 we will use Deep Learning to accurately identify the gender and age of a person from a single image of a face. We will use the models trained by Tal Hassner and Gil Levi. The predicted gender may be one of ‘Male’ and ‘Female’, and the predicted age may be one of the following ranges- (0 – 2), (4 – 6), (8 – 12), (15 – 20), (25 – 32), (38 – 43), (48 – 53), (60 – 100) (8 nodes in the final softmax layer). It is very difficult to accurately guess an exact age from a single image because of factors like makeup, lighting, obstructions, and facial expressions. And so, we make this a classification problem instead of making it one of regression.
 
-#The CNN Architecture
+The CNN Architecture
+=====================
 The convolutional neural network for this python project has 3 convolutional layers:
 
 
@@ -17,18 +19,21 @@ Detect faces
 Classify into Male/Female
 Classify into one of the 8 age ranges
 Put the results on the image and display it
-#The Dataset
+The Dataset
+===========
 https://www.kaggle.com/ttungl/adience-benchmark-gender-and-age-classification
 
 For this python project, we’ll use the Adience dataset; the dataset is available in the public domain and you can find it . This dataset serves as a benchmark for face photos and is inclusive of various real-world imaging conditions like noise, lighting, pose, and appearance. The images have been collected from Flickr albums and distributed under the Creative Commons (CC) license. It has a total of 26,580 photos of 2,284 subjects in eight age ranges (as mentioned above) and is about 1GB in size. The models we will use have been trained on this dataset.
 
-#Prerequisites
+Prerequisites
+=============
 You’ll need to install OpenCV (cv2) to be able to run this project. You can do this with pip-
 
  'pip install opencv-python'
 Other packages you’ll be needing are math and argparse, but those come as part of the standard Python library.
 
-#Steps for practicing gender and age detection python project
+Steps for practicing gender and age detection python project
+=============================================================
 1. Download this zip. Unzip it and put its contents in a directory you’ll call gad.
 
 The contents of this zip are:
